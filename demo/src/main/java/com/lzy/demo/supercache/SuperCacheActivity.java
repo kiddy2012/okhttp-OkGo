@@ -16,12 +16,12 @@
 package com.lzy.demo.supercache;
 
 import android.os.Bundle;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v7.widget.Toolbar;
+import com.google.android.material.tabs.TabLayout;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 
 import com.lzy.demo.R;
@@ -33,7 +33,7 @@ import com.lzy.ninegrid.NineGridView;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.OnClick;
 
 /**
@@ -47,9 +47,9 @@ import butterknife.OnClick;
  */
 public class SuperCacheActivity extends BaseActivity {
 
-    @Bind(R.id.toolbar) Toolbar toolbar;
-    @Bind(R.id.viewPager) ViewPager viewPager;
-    @Bind(R.id.tab) TabLayout tab;
+    @BindView(R.id.toolbar) Toolbar toolbar;
+    @BindView(R.id.viewPager) ViewPager viewPager;
+    @BindView(R.id.tab) TabLayout tab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
